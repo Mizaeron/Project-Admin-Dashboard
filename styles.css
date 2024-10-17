@@ -28,14 +28,14 @@ body {
 
 .sidebar {
     display: grid;
-    grid-template-rows: 50px 200px 100px;
+    grid-template-rows: 50px 300px 100px;
     grid-column: 1;
     grid-row: 1 / 5;
     background: linear-gradient(to right, #38bdf8, hsl(217, 91%, 70%));
-    min-width: 200px;
+    min-width: 300px;
     color: white;
     padding-left: 40px;
-    gap: 20px;
+    gap: 30px;
     font-weight: bold;
     font-size: 1.4rem;
 }
@@ -136,15 +136,37 @@ form > p {
 }
 
 .interact {
+    margin-top: 20px;
     display: grid;
+    gap: 15px;
 }
 
 .config {
     display: grid;
-    margin-top: 20px;
+    margin-top: 40px;
+    gap: 20px;
 }
 
 .sidebar > div:first-child {
+    display: flex;
     margin-top: 10px;
     font-size: 2rem;
+    align-items: center;
+}
+svg {
+    fill: white;
+}
+
+.interact svg,
+.config svg {
+    height: 30px;
+    width: 40px;
+}
+
+
+.interact div,
+.config div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
