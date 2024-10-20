@@ -213,6 +213,7 @@ form > p {
     border-radius: 10px;
     background-color: white;
     padding: 20px;
+    overflow: hidden;
 }
 
 .trending {
@@ -281,13 +282,14 @@ h5 {
     display: grid;
     padding: 20px;
     align-content: space-around;
+    font-size: 0.75rem;
 }
 .trending svg {
     height: 40px;
     width: 40px;
 }
 
-.trending > div > div {
+.trending > div > div:first-child {
     display: grid;
     height: 50px;
     width: 50px;
@@ -295,18 +297,30 @@ h5 {
     place-items: center;
 }
 
-.trending > div:first-child > div {
+.trending > div:first-child > div:first-child {
     background-color: hsl(198, 93%, 80%);
 }
 
-.trending > div:nth-child(2) > div {
+.trending > div:nth-child(2) > div:first-child {
     background-color: hsl(38, 92%, 70%);
 }
 
-.trending > div:nth-child(3) > div {
+.trending > div:nth-child(3) > div:first-child {
     background-color: hsl(0, 0%, 70%);
 }
 
-.trending > div:last-child > div {
+.trending > div:last-child > div:first-child {
     background-color: pink;
+}
+
+.trending > div {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending span {
+    color: #808080;
 }
