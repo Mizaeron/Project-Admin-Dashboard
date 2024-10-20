@@ -218,10 +218,11 @@ form > p {
 .trending {
     margin-right: 25px;
     margin-top: -80px;
-    border: 1px solid black;
+    border-radius: 10px;
     grid-column: 2 / 3;
     grid-row: 6 / 9;
     margin-bottom: 100px;
+    background-color: white;
 }
 
 .main-content > h3:first-child {
@@ -274,4 +275,38 @@ h5 {
 
 .anon div:last-child {
     border-bottom: none;
+}
+
+.trending {
+    display: grid;
+    padding: 20px;
+    align-content: space-around;
+}
+.trending svg {
+    height: 40px;
+    width: 40px;
+}
+
+.trending > div > div {
+    display: grid;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    place-items: center;
+}
+
+.trending > div:first-child > div {
+    background-color: hsl(198, 93%, 80%);
+}
+
+.trending > div:nth-child(2) > div {
+    background-color: hsl(38, 92%, 70%);
+}
+
+.trending > div:nth-child(3) > div {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.trending > div:last-child > div {
+    background-color: pink;
 }
